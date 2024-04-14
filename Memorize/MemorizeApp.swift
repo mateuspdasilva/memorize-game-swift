@@ -10,9 +10,11 @@ import SwiftData
 
 @main
 struct MemorizeApp: App {
+    let game = EmojiMemoryGame()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: game)
         }
     }
 }
